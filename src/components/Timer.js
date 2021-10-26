@@ -24,7 +24,7 @@ return diff}), 1000);
 }, []);
     function msToTime(duration) {
         
-          seconds = Math.floor((duration / 1000) % 60),
+         var seconds = Math.floor((duration / 1000) % 60),
           minutes = Math.floor((duration / (1000 * 60)) % 60),
           hours = Math.floor((duration / (1000 * 60 * 60)) % 24);
       
