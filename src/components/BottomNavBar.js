@@ -1,7 +1,7 @@
 import React,{ useState, useEffect } from 'react'
 import { useHistory } from 'react-router-dom'
 
-import { RiHomeSmile2Line, RiHomeSmile2Fill, RiUser5Fill, RiSearchEyeFill, RiAddFill } from 'react-icons/ri'
+import { RiHomeSmile2Line, RiHomeSmile2Fill, RiUser5Fill, RiSearchEyeFill } from 'react-icons/ri'
 import { BiSearchAlt } from 'react-icons/bi'
 import {MdOutlineAddCircle} from 'react-icons/md/index'
 import { AiOutlineHeart, AiFillHeart } from 'react-icons/ai'
