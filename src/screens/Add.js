@@ -5,7 +5,7 @@ import axios from 'axios'
 
 const Add = () => {
     const [email,setEmail]= useState('')
-    const fetchAccount=()=>{
+   /* const fetchAccount=()=>{
         axios.post('/getAccount', {
             email: this.email
           })
@@ -14,7 +14,7 @@ const Add = () => {
           }, (error) => {
             console.log(error);
           });
-    }
+    }*/
     return (
         <div className="main-content">
             <div className="row">
@@ -22,7 +22,7 @@ const Add = () => {
            <h3>Enter Email to access your page</h3>
             <form class="form-signin">
       <input type="email" value={email} class="form-control" onInput={e=>setEmail(e.target.value)} placeholder="Secret" required autofocus/>
-      <button className="btn btn-primary go" onClick="fetchAccount">Go</button>
+      <button className="btn btn-primary go" >Go</button>
     </form> 
     </div>  
     </div>
