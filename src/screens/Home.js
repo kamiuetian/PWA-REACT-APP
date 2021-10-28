@@ -6,7 +6,9 @@ const Home = () => {
     return (
         <div className="main-content">
         <div className="row">
+        
             <div className="qr-container">
+            <h6>Text1</h6>
         <QRCode value="https://google.com"/>
         </div>
         </div>

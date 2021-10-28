@@ -6,7 +6,7 @@ import axios from 'axios'
 const Add = () => {
     const [email,setEmail]= useState('')
     const fetchAccount=()=>{
-        axios.post('/login', {
+        axios.post('/getAccount', {
             email: this.email
           })
           .then((response) => {
