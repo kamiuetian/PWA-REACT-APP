@@ -1,7 +1,7 @@
 import React from 'react'
 import BottomNavBar from '../components/BottomNavBar'
 import { useState } from 'react'
-import axios from 'axios'
+//import axios from 'axios'
 
 const Add = () => {
     const [email,setEmail]= useState('')
