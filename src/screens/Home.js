@@ -9,7 +9,7 @@ const Home = () => {
         
             <div className="qr-container">
             <h6>Text1</h6>
-        <QRCode value="https://google.com"/>
+        <QRCode value="https://google.com" size="250"/>
         </div>
         </div>
         <div className="row">
