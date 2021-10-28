@@ -5,7 +5,8 @@
 }
 .bottom-nav {
   width: 100%;
-  height: 50px;
+  height: 20%;
+  max-height: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -20,22 +21,49 @@
   justify-content: center;
   align-items: center;
 }
+
+.bn-tab p
+{
+  text-align: center;
+  font-size: small;
+  font-weight: bold;
+}
 .add
 {
-  margin-bottom: 50px;
+  margin-bottom: 90px;
+
 }
-#center
+.home-screen
 {
-	font-family:Roboto;
-	height: 100vh;
-	width: 100vw;
+  height: 100%;
+}
+	
+.qr-container{
+  text-align: center;
+}
+.main-content
+{
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+}
+.row
+{
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 20px;
+}
+.time-container
+{
+  font-family:Roboto;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	color: rgb(0, 0, 0);
-	background-color :rgb(235, 232, 232);
 	transition: .5s;
 }
+
 .form-signin {
   width: 100%;
   max-width: 330px;
@@ -52,6 +80,19 @@
 }
 .form-signin .form-control:focus {
   z-index: 2;
+}
+/*Add screen*/
+
+.form-container
+{
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+.go{
+  float: right;
+  min-width: 80px;
+  margin-top: 10px;
 }
 
 		

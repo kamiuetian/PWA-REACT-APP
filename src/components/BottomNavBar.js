@@ -37,29 +37,29 @@ const BottomNavBar = props => {
         <div className='bottom-nav'>
             <div className='bn-tab'>
                 {activeTabs === 'home' ?
-                    <RiHomeSmile2Fill
-                        size='35'
+                    <div className="text-center"><RiHomeSmile2Fill
+                        size='40'
                         color='#6eb5f5'
                         onClick={() => setActiveTabs('home')}
-                    /> :
-                    <RiHomeSmile2Line
-                        size='35'
+                    /><p>Home</p></div> :
+                   <div className="text-center"> <RiHomeSmile2Line
+                        size='40'
                         color='#000'
                         onClick={() => setActiveTabs('home')}
-                    />}
+                    /><p>Home</p></div>}
             </div>
             <div className='bn-tab'>
                 {activeTabs === 'search' ?
-                    <RiSearchEyeFill
-                        size='35'
+                   <div className="text-center"> <RiSearchEyeFill
+                        size='40'
                         color='#6eb5f5'
                         onClick={() => setActiveTabs('search')}
-                    /> :
-                    <BiSearchAlt
-                        size='35'
+                    /> <p>Search</p></div>:
+                    <div className="text-center"><BiSearchAlt
+                        size='40'
                         color='#000'
                         onClick={() => setActiveTabs('search')}
-                    />}
+                    /><p>Search</p></div>}
             </div>
             <div className='bn-tab add'>
                 {activeTabs === 'add' ?
@@ -76,29 +76,29 @@ const BottomNavBar = props => {
             </div>
             <div className='bn-tab'>
                 {activeTabs === 'favourites' ?
-                    <AiFillHeart
-                        size='35'
+                    <div className="text-center"><AiFillHeart
+                        size='40'
                         color='#6eb5f5'
                         onClick={() => setActiveTabs('favourites')}
-                    /> :
-                    <AiOutlineHeart
-                        size='35'
+                    /><p>Favourite</p></div> :
+                    <div className="text-center"><AiOutlineHeart
+                        size='40'
                         color='#000'
                         onClick={() => setActiveTabs('favourites')}
-                    />}
+                    /><p>Favourite</p></div>}
             </div>
             <div className='bn-tab'>
                 {activeTabs === 'account' ?
-                    <RiUser5Fill
-                        size='35'
+                    <div className="text-center"><RiUser5Fill
+                        size='40'
                         color='#6eb5f5'
                         onClick={() => setActiveTabs('account')}
-                    /> :
-                    <RiUser5Line
-                        size='35'
+                    /><p>Account</p></div> :
+                    <div className="text-center"><RiUser5Line
+                        size='40'
                         color='#000'
                         onClick={() => setActiveTabs('account')}
-                    />}
+                    /><p>Account</p></div>}
             </div>
         </div>
     )

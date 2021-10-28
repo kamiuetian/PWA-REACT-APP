@@ -37,7 +37,7 @@ return diff}), 1000);
       
 
     return (
-        <div id="center">
+        <div>
             <h1>{time}</h1>
         </div>
     )
