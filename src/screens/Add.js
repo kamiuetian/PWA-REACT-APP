@@ -16,16 +16,22 @@ const Add = () => {
           });
     }*/
     return (
-        <div className="main-content">
-            <div className="row">
-            <div className="form-container text-center">
-           <h3>Enter Email to access your page</h3>
-            <form class="form-signin">
-      <input type="email" value={email} class="form-control" onInput={e=>setEmail(e.target.value)} placeholder="Secret" required autofocus/>
-      <button className="btn btn-primary go" >Go</button>
-    </form> 
-    </div>  
-    </div>
+      <div>
+        <section id="hero" class="d-flex align-items-center">
+
+<div class="container">
+  <div class="row">
+      <form class="php-email-form">
+              <div class="row">
+               <div class="form-group">
+                  <input type="email" value={email} class="form-control" onInput={e=>setEmail(e.target.value)} name="email" id="email" required=""/>
+                </div>
+              </div>
+              <div><button type="submit" className="btn btn-lg btn-primary go">Get Page</button></div>
+            </form>
+            </div>
+        </div>
+        </section>
             <BottomNavBar name='add' />
         
         </div>

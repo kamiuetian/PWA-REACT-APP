@@ -4,43 +4,27 @@ import Timer from '../components/Timer'
 import QRCode from "react-qr-code";
 const Home = () => {
     return (
-        <div className="main-content">
-        <div className="row">
-        
-            <div className="qr-container">
-            <h6>Text1</h6>
-        <QRCode value="https://google.com" size="250"/>
-        </div>
-        </div>
-        <div className="row">
-        <div className="time-container">
-            <h6>Text2</h6> 
-            </div> 
-</div>
-<div className="row">
-        <div className="time-container">
-            <h6>Text3</h6> 
-            </div> 
-</div>
-<div className="row">
-        <div className="time-container">
-            <h6>Text4</h6> 
-            </div> 
-</div>
-<div className="row">
-        <div className="time-container">
-            <h6>Text5</h6> 
-            </div> 
-</div>
-        <div className="row">
-        <div className="time-container">
-            <Timer/> 
-            </div> 
-</div>
+        <div>
+            <header id="header" class="fixed-top ">
+<BottomNavBar/> 
+  </header>
+  <section id="hero" class="d-flex align-items-center">
 
-            
-            <BottomNavBar name='home' />
-            
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="200">
+          <h1><Timer/></h1>
+        </div>
+        <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="200">
+          <QRCode class="img-fluid animated" value="https://www.google.com"/>
+         
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+
         </div>
     )
 }

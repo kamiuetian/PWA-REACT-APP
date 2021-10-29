@@ -10,89 +10,339 @@
   align-items: center;
   position: fixed;
   bottom: 0;
+  background-color: #2f3e4e;
 }
 
 .bn-tab {
   width: 25%;
-  height: 100%;
+  max-height: 1vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 1.5vh;
 }
 
 .bn-tab p
 {
   text-align: center;
-  font-size: 1vh;
+  font-size: 1.5vh;
   font-weight: bold;
+}
+/*top nav*/
+.top-nav{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  background-color: #2f3e4e;
+}
+
+.tp-tab {
+  width: 25%;
+  max-height: 0.2vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5vh;
+}
+
+.tp-tab p
+{
+  text-align: center;
+  font-size: 1.5vh;
+  font-weight: bold;
+}
+.add-top
+{
+  margin-top: 150px;
+
 }
 .add
 {
-  margin-bottom: 90px;
+  margin-bottom: 150px;
 
 }
-.home-screen
-{
-  height: 100%;
-}
-	
-.qr-container{
-  text-align: center;
-}
-.main-content
-{
-  margin-top: 24px;
-  width:100%;
-  display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-.row
-{
-  margin-left: 0px;
-  margin-right: 0px;
-  margin-top: 20px;
-  flex:1;
-}
-.time-container
-{
-  font-family:Roboto;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	color: rgb(0, 0, 0);
-	transition: .5s;
-}
 
-.form-signin {
-  width: 100%;
-  max-width: 330px;
-  padding: 15px;
-  margin: 0 auto;
-}
 
-.form-signin .form-control {
+.form-group input {
   position: relative;
   box-sizing: border-box;
   height: auto;
+  min-height: 80px;
   padding: 10px;
   font-size: 16px;
 }
-.form-signin .form-control:focus {
-  z-index: 2;
-}
+
 /*Add screen*/
 
-.form-container
-{
-  position: absolute;
-  top: 50%;
-  transform: translate(0, -50%);
-}
 .go{
   float: right;
-  min-width: 80px;
+  min-width: 100px;
   margin-top: 10px;
+  line-height: 3vh;
+  font-size: 3vh;
 }
+
+.section-nav
+{
+  height: 10vh;
+}
+
+/**
+* Template Name: Arsha - v4.6.0
+* Template URL: https://bootstrapmade.com/arsha-free-bootstrap-html-template-corporate/
+* Author: BootstrapMade.com
+* License: https://bootstrapmade.com/license/
+*/
+
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #f7f2f2;
+}
+
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+#header {
+  transition: all 0.5s;
+  z-index: 997;
+  padding: 15px 0;
+}
+#header.header-scrolled, #header.header-inner-pages {
+  background: rgba(40, 58, 90, 0.9);
+}
+
+
+/*--------------------------------------------------------------
+# Hero Section
+--------------------------------------------------------------*/
+#hero {
+  width: 100%;
+  height: 80vh;
+  background: #37517e;
+}
+#hero .container {
+  padding-top: 72px;
+}
+#hero h1 {
+  margin: 0 0 10px 0;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 56px;
+  color: #fff;
+}
+#hero h2 {
+  color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 50px;
+  font-size: 24px;
+}
+#hero .animated {
+  animation: up-down 2s ease-in-out infinite alternate-reverse both;
+}
+@media (max-width: 991px) {
+  #hero {
+    height: 100vh;
+    text-align: center;
+  }
+  #hero .animated {
+    -webkit-animation: none;
+    animation: none;
+  }
+  #hero .hero-img {
+    text-align: center;
+  }
+  #hero .hero-img img {
+    width: 50%;
+  }
+}
+@media (max-width: 768px) {
+  #hero h1 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+  #hero h2 {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 30px;
+  }
+  #hero .hero-img img {
+    width: 70%;
+  }
+}
+@media (max-width: 575px) {
+  #hero .hero-img img {
+    width: 80%;
+  }
+  #hero .btn-get-started {
+    font-size: 16px;
+    padding: 10px 24px 11px 24px;
+  }
+}
+/*--------------------------------------------------------------
+# Sections General
+--------------------------------------------------------------*/
+section {
+  padding: 60px 0;
+  overflow: hidden;
+}
+
+.section-bg {
+  background-color: #f3f5fa;
+}
+
+.section-title {
+  text-align: center;
+  padding-bottom: 30px;
+}
+.section-title h2 {
+  font-size: 32px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+  color: #37517e;
+}
+.section-title h2::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 120px;
+  height: 1px;
+  background: #ddd;
+  bottom: 1px;
+  left: calc(50% - 60px);
+}
+.section-title h2::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 40px;
+  height: 3px;
+  background: #47b2e4;
+  bottom: 0;
+  left: calc(50% - 20px);
+}
+.section-title p {
+  margin-bottom: 0;
+}
+
+
+/*--------------------------------------------------------------
+# Why Us
+--------------------------------------------------------------*/
+.why-us .content {
+  padding: 60px 100px 0 100px;
+}
+.why-us .content h3 {
+  font-weight: 400;
+  font-size: 34px;
+  color: #37517e;
+}
+.why-us .content h4 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 5px;
+}
+.why-us .content p {
+  font-size: 15px;
+  color: #848484;
+}
+.why-us .img {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.why-us .accordion-list {
+  padding: 0 100px 60px 100px;
+}
+.why-us .accordion-list ul {
+  padding: 0;
+  list-style: none;
+}
+.why-us .accordion-list li + li {
+  margin-top: 15px;
+}
+.why-us .accordion-list li {
+  padding: 20px;
+  background: #fff;
+  border-radius: 4px;
+}
+.why-us .accordion-list a {
+  display: block;
+  position: relative;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  padding-right: 30px;
+  outline: none;
+  cursor: pointer;
+}
+.why-us .accordion-list span {
+  color: #47b2e4;
+  font-weight: 600;
+  font-size: 18px;
+  padding-right: 10px;
+}
+.why-us .accordion-list i {
+  font-size: 24px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.why-us .accordion-list p {
+  margin-bottom: 0;
+  padding: 10px 0 0 0;
+}
+.why-us .accordion-list .icon-show {
+  display: none;
+}
+.why-us .accordion-list a.collapsed {
+  color: #343a40;
+}
+.why-us .accordion-list a.collapsed:hover {
+  color: #47b2e4;
+}
+.why-us .accordion-list a.collapsed .icon-show {
+  display: inline-block;
+}
+.why-us .accordion-list a.collapsed .icon-close {
+  display: none;
+}
+@media (max-width: 1024px) {
+  .why-us .content, .why-us .accordion-list {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+@media (max-width: 992px) {
+  .why-us .img {
+    min-height: 400px;
+  }
+  .why-us .content {
+    padding-top: 30px;
+  }
+  .why-us .accordion-list {
+    padding-bottom: 30px;
+  }
+}
+@media (max-width: 575px) {
+  .why-us .img {
+    min-height: 200px;
+  }
+}
+.contact .php-email-form input {
+  height: 44px;
+}
+
+
+
 
 		

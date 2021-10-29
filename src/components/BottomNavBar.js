@@ -34,72 +34,141 @@ const BottomNavBar = props => {
     }, [activeTabs, history])
 
     return (
-        <div className='bottom-nav'>
-            <div className='bn-tab'>
+        <div>
+        <div className='top-nav'>
+            <div className='tp-tab'>
                 {activeTabs === 'home' ?
                     <div className="text-center"><RiHomeSmile2Fill
-                        size='40'
+                        size='100'
                         color='#6eb5f5'
                         onClick={() => setActiveTabs('home')}
                     /><p>Home</p></div> :
                    <div className="text-center"> <RiHomeSmile2Line
-                        size='40'
-                        color='#000'
+                        size='100'
+                        color='#fff'
+                        onClick={() => setActiveTabs('home')}
+                    /><p>Home</p></div>}
+            </div>
+            <div className='tp-tab'>
+                {activeTabs === 'search' ?
+                   <div className="text-center"> <RiSearchEyeFill
+                        size='100'
+                        color='#6eb5f5'
+                        onClick={() => setActiveTabs('search')}
+                    /> <p>Search</p></div>:
+                    <div className="text-center"><BiSearchAlt
+                        size='100'
+                        color='#fff'
+                        onClick={() => setActiveTabs('search')}
+                    /><p>Search</p></div>}
+            </div>
+            <div className='tp-tab add-top'>
+                {activeTabs === 'add' ?
+                    <MdOutlineAddCircle
+                        size='150'
+                        color='#6eb5f5'
+                        onClick={() => setActiveTabs('add')}
+                    /> :
+                    <MdOutlineAddCircle
+                        size='150'
+                        color='#fff'
+                        onClick={() => setActiveTabs('add')}
+                    />}
+            </div>
+            <div className='tp-tab'>
+                {activeTabs === 'favourites' ?
+                    <div className="text-center"><AiFillHeart
+                        size='100'
+                        color='#6eb5f5'
+                        onClick={() => setActiveTabs('favourites')}
+                    /><p>Favourite</p></div> :
+                    <div className="text-center"><AiOutlineHeart
+                        size='100'
+                        color='#fff'
+                        onClick={() => setActiveTabs('favourites')}
+                    /><p>Favourite</p></div>}
+            </div>
+            <div className='tp-tab'>
+                {activeTabs === 'account' ?
+                    <div className="text-center"><RiUser5Fill
+                        size='100'
+                        color='#6eb5f5'
+                        onClick={() => setActiveTabs('account')}
+                    /><p>Account</p></div> :
+                    <div className="text-center"><RiUser5Line
+                        size='100'
+                        color='#fff'
+                        onClick={() => setActiveTabs('account')}
+                    /><p>Account</p></div>}
+            </div>
+        </div>
+        <div className='bottom-nav'>
+            <div className='bn-tab'>
+                {activeTabs === 'home' ?
+                    <div className="text-center"><RiHomeSmile2Fill
+                        size='100'
+                        color='#6eb5f5'
+                        onClick={() => setActiveTabs('home')}
+                    /><p>Home</p></div> :
+                   <div className="text-center"> <RiHomeSmile2Line
+                        size='100'
+                        color='#fff'
                         onClick={() => setActiveTabs('home')}
                     /><p>Home</p></div>}
             </div>
             <div className='bn-tab'>
                 {activeTabs === 'search' ?
                    <div className="text-center"> <RiSearchEyeFill
-                        size='40'
+                        size='100'
                         color='#6eb5f5'
                         onClick={() => setActiveTabs('search')}
                     /> <p>Search</p></div>:
                     <div className="text-center"><BiSearchAlt
-                        size='40'
-                        color='#000'
+                        size='100'
+                        color='#fff'
                         onClick={() => setActiveTabs('search')}
                     /><p>Search</p></div>}
             </div>
             <div className='bn-tab add'>
                 {activeTabs === 'add' ?
                     <MdOutlineAddCircle
-                        size='70'
+                        size='150'
                         color='#6eb5f5'
                         onClick={() => setActiveTabs('add')}
                     /> :
                     <MdOutlineAddCircle
-                        size='70'
-                        color='#000'
+                        size='150'
+                        color='#fff'
                         onClick={() => setActiveTabs('add')}
                     />}
             </div>
             <div className='bn-tab'>
                 {activeTabs === 'favourites' ?
                     <div className="text-center"><AiFillHeart
-                        size='40'
+                        size='100'
                         color='#6eb5f5'
                         onClick={() => setActiveTabs('favourites')}
                     /><p>Favourite</p></div> :
                     <div className="text-center"><AiOutlineHeart
-                        size='40'
-                        color='#000'
+                        size='100'
+                        color='#fff'
                         onClick={() => setActiveTabs('favourites')}
                     /><p>Favourite</p></div>}
             </div>
             <div className='bn-tab'>
                 {activeTabs === 'account' ?
                     <div className="text-center"><RiUser5Fill
-                        size='40'
+                        size='100'
                         color='#6eb5f5'
                         onClick={() => setActiveTabs('account')}
                     /><p>Account</p></div> :
                     <div className="text-center"><RiUser5Line
-                        size='40'
-                        color='#000'
+                        size='100'
+                        color='#fff'
                         onClick={() => setActiveTabs('account')}
                     /><p>Account</p></div>}
             </div>
+        </div>
         </div>
     )
 }
