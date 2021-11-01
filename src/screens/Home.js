@@ -2,12 +2,11 @@ import React from 'react'
 import BottomNavBar from '../components/BottomNavBar'
 import Timer from '../components/Timer'
 import QRCode from "react-qr-code";
+import Header from '../components/header';
 const Home = () => {
     return (
         <div>
-            <header id="header" class="fixed-top ">
-<BottomNavBar/> 
-  </header>
+            <Header/>
   <section id="hero" class="d-flex align-items-center">
 
     <div class="container">
@@ -23,7 +22,7 @@ const Home = () => {
     </div>
 
   </section>
-
+  <BottomNavBar/> 
 
         </div>
     )

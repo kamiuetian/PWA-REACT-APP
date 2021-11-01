@@ -1,11 +1,12 @@
 import React from 'react'
 import BottomNavBar from '../components/BottomNavBar'
 import { useState } from 'react'
-//import axios from 'axios'
+import axios from 'axios'
+import Header from '../components/header'
 
 const Add = () => {
     const [email,setEmail]= useState('')
-   /* const fetchAccount=()=>{
+    const fetchAccount=()=>{
         axios.post('/getAccount', {
             email: this.email
           })
@@ -14,9 +15,10 @@ const Add = () => {
           }, (error) => {
             console.log(error);
           });
-    }*/
+    }
     return (
       <div>
+        <Header/>
         <section id="hero" class="d-flex align-items-center">
 
 <div class="container">
@@ -27,7 +29,7 @@ const Add = () => {
                   <input type="email" value={email} class="form-control" onInput={e=>setEmail(e.target.value)} name="email" id="email" required=""/>
                 </div>
               </div>
-              <div><button type="submit" className="btn btn-lg btn-primary go">Get Page</button></div>
+              <div><button type="button" onClick={fetchAccount} className="btn btn-lg btn-primary go">Get Page</button></div>
             </form>
             </div>
         </div>
